@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
 import { useAuth } from '../context/AuthContext';
+import { prefetchRoute } from '../lib/prefetch';
 
 const NAV_LINKS = [
   { to: '/shop', label: 'Shop' },
@@ -41,7 +42,7 @@ export default function Navbar() {
 
         <nav className="navbar-links">
           {NAV_LINKS.map((link) => (
-            <NavLink key={link.to} to={link.to} className={({ isActive }) => (isActive ? 'active' : '')}>
+            <NavLink key={link.to} to={link.to} onMouseEnter={() => prefetchRoute(link.to)} onFocus={() => prefetchRoute(link.to)} className={({ isActive }) => (isActive ? 'active' : '')}>
               {link.label}
             </NavLink>
           ))}
@@ -95,6 +96,8 @@ export default function Navbar() {
                   <NavLink
                     key={link.to}
                     to={link.to}
+                    onMouseEnter={() => prefetchRoute(link.to)}
+                    onFocus={() => prefetchRoute(link.to)}
                     className={({ isActive }) => (isActive ? 'active' : '')}
                     onClick={closeMobile}
                   >

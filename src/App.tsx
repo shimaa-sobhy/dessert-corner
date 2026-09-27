@@ -1,4 +1,4 @@
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ToastProvider } from './context/ToastContext';
 import { CartProvider } from './context/CartContext';
@@ -7,6 +7,7 @@ import { AuthProvider } from './context/AuthContext';
 import Layout from './components/Layout';
 import ProtectedRoute from './components/ProtectedRoute';
 import PageLoader from './components/PageLoader';
+import { prefetchAllTopLevel } from './lib/prefetch';
 
 import Home from './pages/Home';
 
@@ -32,6 +33,10 @@ const Terms = lazy(() => import('./pages/Terms'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 export default function App() {
+  useEffect(() => {
+    prefetchAllTopLevel();
+  }, []);
+
   return (
     <ToastProvider>
       <AuthProvider>
