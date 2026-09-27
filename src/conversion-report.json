@@ -1,0 +1,79 @@
+{
+  "results": [
+    {
+      "from": "shop2.png",
+      "to": "shop2.webp",
+      "before": 147439,
+      "after": 22356
+    },
+    {
+      "from": "shop3.png",
+      "to": "shop3.webp",
+      "before": 115021,
+      "after": 16908
+    },
+    {
+      "from": "shop4.png",
+      "to": "shop4.webp",
+      "before": 112231,
+      "after": 16064
+    },
+    {
+      "from": "shop5.png",
+      "to": "shop5.webp",
+      "before": 120329,
+      "after": 18912
+    },
+    {
+      "from": "shop6.png",
+      "to": "shop6.webp",
+      "before": 95238,
+      "after": 14836
+    },
+    {
+      "from": "shop7.png",
+      "to": "shop7.webp",
+      "before": 80658,
+      "after": 12084
+    },
+    {
+      "from": "shop8.png",
+      "to": "shop8.webp",
+      "before": 108799,
+      "after": 15806
+    },
+    {
+      "from": "shop9.png",
+      "to": "shop9.webp",
+      "before": 103949,
+      "after": 15126
+    },
+    {
+      "from": "tasty-bluث.png",
+      "to": "tasty-blu.webp",
+      "before": 234349,
+      "after": 24008
+    },
+    {
+      "from": "waffle.png",
+      "to": "waffle.webp",
+      "before": 212772,
+      "after": 21044
+    },
+    {
+      "from": "We'd love to bake for your next occasion.jpg",
+      "to": "our-bakery.webp",
+      "before": 73687,
+      "after": 61580
+    }
+  ],
+  "deleted": [
+    "فردي_متناثر_احمر-.png",
+    "متناثر.png",
+    "متناثر_احمر.png"
+  ],
+  "locked": [
+    "shop14و.webp"
+  ],
+  "failed": []
+}

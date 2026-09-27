@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+settings.local.json
+
+# Dev/test artifacts (harness screenshots, run logs, LH dumps, stray templates)
+*.log
+lh-*.json
+/*.png
+homepage.html
+shots/
+shots-final/
+fixtures/
